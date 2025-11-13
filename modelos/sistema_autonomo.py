@@ -1,9 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from paso3_preparar_datos import cargar_y_preparar
-from paso3_motor_inteligente import elegir_modelo
-from paso4_modelo_random_forest import entrenar_random_forest, predecir_random_forest
-from paso4_modelo_prophet import entrenar_prophet, predecir_prophet
+from modelos.paso3_preparar_datos import cargar_y_preparar
+from modelos.paso3_motor_inteligente import elegir_modelo
+from modelos.paso4_modelo_random_forest import entrenar_random_forest, predecir_random_forest
+from modelos.paso4_modelo_prophet import entrenar_prophet, predecir_prophet
 
 
 def generar_grafico(df, pred):

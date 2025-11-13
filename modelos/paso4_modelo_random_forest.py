@@ -44,7 +44,7 @@ def predecir_random_forest(modelo, df, dias_futuro=30):
 
 # --------------- TEST --------------------
 if __name__ == "__main__":
-    from paso3_preparar_datos import cargar_y_preparar
+    from modelos.paso3_preparar_datos import cargar_y_preparar
 
     df = cargar_y_preparar("../data/ventas_producto.xlsx")
     modelo = entrenar_random_forest(df)

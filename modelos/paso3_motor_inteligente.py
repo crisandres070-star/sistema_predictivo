@@ -1,4 +1,4 @@
-from paso3_preparar_datos import cargar_y_preparar
+from modelos.paso3_preparar_datos import cargar_y_preparar
 
 def elegir_modelo(df):
     # Cantidad de días únicos
