@@ -2,7 +2,7 @@ streamlit
 pandas
 matplotlib
 openpyxl
-numpy
+numpy==1.26.4
 python-dateutil
 pytz
 cmdstanpy==1.1.0
