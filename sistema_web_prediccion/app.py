@@ -52,9 +52,13 @@ if archivo:
     st.pyplot(fig)
 
     # ---- Descarga ----
-    st.download_button(
-        label="📥 Descargar predicciones",
-        data=pred.to_csv(index=False),
-        file_name="predicciones_30_dias.csv",
-        mime="text/csv"
-    )
+    # Exportar CSV compatible con Excel LATAM (usa ; como separador)
+csv_latam = pred.to_csv(index=False, sep=';', encoding='utf-8')
+
+st.download_button(
+    label="💾 Descargar predicciones",
+    data=csv_latam,
+    file_name="predicciones_30_dias.csv",
+    mime="text/csv"
+)
+
