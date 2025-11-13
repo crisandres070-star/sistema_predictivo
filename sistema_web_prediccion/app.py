@@ -51,14 +51,10 @@ if archivo:
     ax.legend()
     st.pyplot(fig)
 
-    # ---- Descarga ----
-# ----- Exportar CSV en formato LATAM -----
-csv_latam = pred.to_csv(index=False, sep=';', encoding='utf-8')
-
+# ---- Descarga ----
 st.download_button(
-    label="💾 Descargar predicciones",
-    data=csv_latam,
+    label="⬇️ Descargar predicciones",
+    data=pred.to_csv(index=False),
     file_name="predicciones_30_dias.csv",
     mime="text/csv"
 )
-

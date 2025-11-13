@@ -1,10 +1,11 @@
 streamlit
 pandas
 matplotlib
-prophet
 openpyxl
 numpy
 python-dateutil
 pytz
 cmdstanpy
 scikit-learn
+pystan==2.19.1.1
+prophet==1.1.5
