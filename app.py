@@ -8,7 +8,8 @@ from modelos.motor import (
     predecir_random_forest
 )
 
-from utils.procesar_excel import cargar_excel
+from procesar_excel import cargar_excel
+
 
 st.title("😎 Sistema de Predicción Automática de Demanda")
 st.write("Sube tu archivo Excel y obtén predicciones automáticas para los próximos 30 días.")
