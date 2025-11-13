@@ -52,7 +52,7 @@ if archivo:
     st.pyplot(fig)
 
     # ---- Descarga ----
-    # Exportar CSV compatible con Excel LATAM (usa ; como separador)
+# ----- Exportar CSV en formato LATAM -----
 csv_latam = pred.to_csv(index=False, sep=';', encoding='utf-8')
 
 st.download_button(
