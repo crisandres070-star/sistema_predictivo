@@ -5,7 +5,6 @@ openpyxl
 numpy
 python-dateutil
 pytz
-cmdstanpy
+cmdstanpy==1.1.0
+prophet==1.1.4
 scikit-learn
-pystan==2.19.1.1
-prophet==1.1.5
